@@ -1,0 +1,71 @@
+Simulare 1:
+Runda 1: P1 - C, P2 - C | Scor: 1, 1
+Runda 2: P1 - C, P2 - C | Scor: 2, 2
+Runda 3: P1 - C, P2 - C | Scor: 3, 3
+Runda 4: P1 - C, P2 - C | Scor: 4, 4
+Runda 5: P1 - C, P2 - C | Scor: 5, 5
+Runda 6: P1 - C, P2 - C | Scor: 6, 6
+Runda 7: P1 - C, P2 - T | Scor: 9, 6
+Runda 8: P1 - T, P2 - C | Scor: 9, 9
+Runda 9: P1 - C, P2 - C | Scor: 10, 10
+Runda 10: P1 - C, P2 - C | Scor: 11, 11
+Runda 11: P1 - C, P2 - C | Scor: 12, 12
+Runda 12: P1 - C, P2 - T | Scor: 15, 12
+Runda 13: P1 - T, P2 - C | Scor: 15, 15
+Runda 14: P1 - C, P2 - T | Scor: 18, 15
+Runda 15: P1 - T, P2 - C | Scor: 18, 18
+Runda 16: P1 - C, P2 - T | Scor: 21, 18
+Runda 17: P1 - T, P2 - T | Scor: 23, 20
+Runda 18: P1 - T, P2 - T | Scor: 25, 22
+Runda 19: P1 - T, P2 - T | Scor: 27, 24
+Runda 20: P1 - T, P2 - T | Scor: 29, 26
+
+Scor final: P1 - 29, P2 - 26
+
+Simulare 2:
+Runda 1: P1 - C, P2 - T | Scor: 3, 0
+Runda 2: P1 - T, P2 - T | Scor: 5, 2
+Runda 3: P1 - T, P2 - C | Scor: 5, 5
+Runda 4: P1 - C, P2 - T | Scor: 8, 5
+Runda 5: P1 - T, P2 - C | Scor: 8, 8
+Runda 6: P1 - C, P2 - C | Scor: 9, 9
+Runda 7: P1 - C, P2 - T | Scor: 12, 9
+Runda 8: P1 - T, P2 - C | Scor: 12, 12
+Runda 9: P1 - C, P2 - T | Scor: 15, 12
+Runda 10: P1 - T, P2 - C | Scor: 15, 15
+Runda 11: P1 - C, P2 - T | Scor: 18, 15
+Runda 12: P1 - T, P2 - T | Scor: 20, 17
+Runda 13: P1 - T, P2 - T | Scor: 22, 19
+Runda 14: P1 - T, P2 - T | Scor: 24, 21
+Runda 15: P1 - T, P2 - C | Scor: 24, 24
+Runda 16: P1 - C, P2 - T | Scor: 27, 24
+Runda 17: P1 - T, P2 - C | Scor: 27, 27
+Runda 18: P1 - C, P2 - C | Scor: 28, 28
+Runda 19: P1 - C, P2 - C | Scor: 29, 29
+Runda 20: P1 - C, P2 - C | Scor: 30, 30
+
+Scor final: P1 - 30, P2 - 30
+
+Simulare 3:
+Runda 1: P1 - C, P2 - T | Scor: 3, 0
+Runda 2: P1 - T, P2 - T | Scor: 5, 2
+Runda 3: P1 - T, P2 - T | Scor: 7, 4
+Runda 4: P1 - T, P2 - T | Scor: 9, 6
+Runda 5: P1 - T, P2 - T | Scor: 11, 8
+Runda 6: P1 - T, P2 - T | Scor: 13, 10
+Runda 7: P1 - T, P2 - C | Scor: 13, 13
+Runda 8: P1 - C, P2 - C | Scor: 14, 14
+Runda 9: P1 - C, P2 - C | Scor: 15, 15
+Runda 10: P1 - C, P2 - T | Scor: 18, 15
+Runda 11: P1 - T, P2 - T | Scor: 20, 17
+Runda 12: P1 - T, P2 - C | Scor: 20, 20
+Runda 13: P1 - C, P2 - T | Scor: 23, 20
+Runda 14: P1 - T, P2 - T | Scor: 25, 22
+Runda 15: P1 - T, P2 - T | Scor: 27, 24
+Runda 16: P1 - T, P2 - C | Scor: 27, 27
+Runda 17: P1 - C, P2 - C | Scor: 28, 28
+Runda 18: P1 - C, P2 - C | Scor: 29, 29
+Runda 19: P1 - C, P2 - T | Scor: 32, 29
+Runda 20: P1 - T, P2 - T | Scor: 34, 31
+
+Scor final: P1 - 34, P2 - 31

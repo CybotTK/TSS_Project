@@ -5,3 +5,9 @@ Acest proiect explorează concepte fundamentale din **teoria jocurilor** prin im
 
 ## **Simulări efectuate**
 Până în acest moment, am realizat **3 rulări** pentru fiecare joc, fiecare constând în **20 de runde**. Aceste teste inițiale oferă o bază solidă pentru investigarea ulterioară a strategiilor în **jocuri bazate pe decizii**. 
+
+📂 **Rezultatele complete ale simulărilor pot fi consultate aici:**  
+📄 [Simulare Dilema Prizonierului.txt](Simulare Dilema Prizonierului.txt)  
+
+## 📌 Resurse  
+- [Graf cod Dilema Prizonierului](https://app.code2flow.com/vj1Gfgn6v1yG)  
