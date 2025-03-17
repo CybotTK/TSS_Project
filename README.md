@@ -10,40 +10,42 @@ Până în acest moment, am realizat **3 rulări** pentru fiecare joc, fiecare c
 <details>
 <summary>📄 Simulari Dilema Prizonierului</summary>
 <br>
-Simulare 1
+**Simulare 1** <br>
 Inițial, ambele părți cooperează, acumulând scoruri egale.
 Pe parcurs, trădarea începe să apară, alternând între jucători.
 Spre final, ambele părți încep să trădeze constant.
-Rezultat: P1 - 29, P2 - 26 → Ușoară victorie pentru P1.
-Simulare 2
+Rezultat: P1 - 29, P2 - 26 → Ușoară victorie pentru P1. <br>
+**Simulare 2** <br>
 Jucătorii alternează între cooperare și trădare, dar revin la un echilibru.
 În ultimele runde, cooperarea este predominantă.
-Rezultat: P1 - 30, P2 - 30 → Egalitate.
-Simulare 3
+Rezultat: P1 - 30, P2 - 30 → Egalitate. <br>
+**Simulare 3 **<br> 
 Inițial, predomină trădarea, dar apoi se stabilește un echilibru.
 În ultimele runde, trădarea devine mai frecventă.
-Rezultat: P1 - 34, P2 - 31 → P1 câștigă.
-📌 Observație: Jucătorii care încep să trădeze mai devreme pot câștiga pe termen scurt, dar cooperarea duce adesea la rezultate mai echilibrate.
+Rezultat: P1 - 34, P2 - 31 → P1 câștigă. <br>
+<br>
+📌 **Observație**: Jucătorii care încep să trădeze mai devreme pot câștiga pe termen scurt, dar cooperarea duce adesea la rezultate mai echilibrate.
 </details>
 <details>
 <summary>📄 Simulari Stag Hunt</summary>
 <br>
-Simulare 1
+**Simulare 1** <br>
 P1 adoptă diverse strategii (random, selfish, cooperative).
 P2 menține strategii mai consistente.
 La final, P2 obține un scor mai mare prin alegerea constantă a iepurelui.
-Rezultat: P1 - 40, P2 - 44 → P2 câștigă.
-Simulare 2
+Rezultat: P1 - 40, P2 - 44 → P2 câștigă. <br>
+**Simulare 2** <br>
 Ambii jucători utilizează strategii tit-for-tat și cooperative.
 Scorurile rămân egale până spre final.
 În ultimele runde, P2 devine mai egoist și câștigă avantaj.
-Rezultat: P1 - 52, P2 - 56 → P2 câștigă.
-Simulare 3
+Rezultat: P1 - 52, P2 - 56 → P2 câștigă. <br>
+**Simulare 3** <br> 
 Inițial, strategii aleatorii și egoiste afectează scorurile.
 P1 trece la strategii mai cooperative, dar P2 profită de asta.
 Spre final, echilibrul revine, dar P2 păstrează un avantaj.
-Rezultat: P1 - 30, P2 - 38 → P2 câștigă.
-📌 Observație: Jucătorii care rămân constanți și profită de cooperarea celorlalți tind să aibă scoruri mai mari.
+Rezultat: P1 - 30, P2 - 38 → P2 câștigă. <br>
+<br>
+📌 **Observație**: Jucătorii care rămân constanți și profită de cooperarea celorlalți tind să aibă scoruri mai mari.
 </details>
 
 🔎 Concluzie generală:
