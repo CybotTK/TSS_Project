@@ -34,7 +34,7 @@ Performanță excelentă în fața Always Cooperate, deoarece maximizează scoru
 Împotriva propriei sale strategii, are un rezultat optim (20-20), deoarece ambele părți cooperează mereu.<br>
 <br>
 
-🔎 **Concluzie**:
+🔎 **Concluzie**:<br>
 Tit-for-Tat pare să fie una dintre cele mai robuste strategii, reușind să se apere împotriva exploatării și să obțină scoruri maxime împotriva strategiilor prietenoase.<br>
 Always Cooperate este o strategie slabă în medii competitive, fiind ușor exploatată.<br>
 Always Betray este bună împotriva strategiilor naive, dar pierde categoric împotriva celor care răspund la trădări.<br>
@@ -67,7 +67,8 @@ Rezultat: P1 - 30, P2 - 38 → P2 câștigă. <br>
 
 📌 **Observație**: Jucătorii care rămân constanți și profită de cooperarea celorlalți tind să aibă scoruri mai mari.
 <br>
-🔎 Concluzie:
+
+🔎 **Concluzie**:<br>
 În Stag Hunt, jucătorii care aleg constant "stag" pot obține scoruri ridicate, dar cei care aleg "hare" în mod egoist pot câștiga avantaj dacă partenerul cooperează prea mult.
 </details>
 
