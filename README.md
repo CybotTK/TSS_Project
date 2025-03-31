@@ -73,4 +73,5 @@ Rezultat: P1 - 30, P2 - 38 → P2 câștigă. <br>
 </details>
 
 ## 📌 Resurse  
-- [Graf cod Dilema Prizonierului](https://app.code2flow.com/vj1Gfgn6v1yG)  
+- [Graf cod Dilema Prizonierului](https://app.code2flow.com/vj1Gfgn6v1yG)
+- [Graf cod Stag Hunt](https://app.code2flow.com/uPm1xk)  
