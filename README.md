@@ -6,6 +6,61 @@ Acest proiect explorează concepte fundamentale din **teoria jocurilor** prin im
 ## **Simulări efectuate**
 Până în acest moment, am realizat **3 rulări** pentru fiecare joc, fiecare constând în **20 de runde**. Aceste teste inițiale oferă o bază solidă pentru investigarea ulterioară a strategiilor în **jocuri bazate pe decizii**. 
 
+<details>
+  <summary><strong>♟️ Strategii pentru Dilema Prizonierului</strong> (click pentru detalii)</summary>
+
+### 1. **Always Cooperate (Cooperare permanentă)**
+- 🧠 *Comportament:* întotdeauna cooperează, indiferent de acțiunile celuilalt jucător.
+- 🎯 *Scop:* maximizează cooperarea între jucători pe termen lung.
+- 🔄 *Utilă când:* adversarul are o tendință de a coopera sau se joacă pe termen lung cu reciprocitate.
+
+### 2. **Always Betray (Trădare permanentă)**
+- 🧠 *Comportament:* întotdeauna trădează, indiferent de acțiunile celuilalt jucător.
+- 💥 *Scop:* pentru a maximiza câștigurile pe termen scurt, dar riscând să ducă la un comportament de retaliere.
+- ⚠️ *Utilă când:* adversarul este slab sau nu se joacă pe termen lung.
+
+### 3. **Tit for Tat (Retaliere după comportament)**
+- 🧠 *Comportament:* începe cu cooperarea, iar apoi copiază ce face adversarul (cooperare dacă adversarul cooperează, trădare dacă adversarul trădează).
+- ⚖️ *Scop:* încurajează cooperarea reciprocă, dar pedepsește trădarea.
+- 🛡️ *Utilă când:* adversarul are un comportament de cooperare, dar vrei să te protejezi de trădări.
+
+### 4. **Random Strategy (Strategie aleatorie)**
+- 🧠 *Comportament:* alege aleatoriu între "C" (cooperare) și "T" (trădare) la fiecare rundă.
+- 🎲 *Scop:* introduce imprevizibilitate, creând confuzie pentru adversar.
+- ❓ *Utilă când:* vrei să îți surprinzi adversarul sau să eviți predicțiile.
+
+</details>
+
+<details>
+  <summary><strong>♟️ Strategii pentru Stag Hunt</strong> (click pentru detalii)</summary>
+
+### 1. **Cooperative (Cooperant)**
+- 🧠 *Comportament:* întotdeauna cooperează și vânează împreună cu alt jucător pentru a prinde cerbul (stag).
+- 🎯 *Scop:* maximizează câștigurile comune prin cooperare, oferind cel mai mare beneficiu atunci când amândoi jucătorii cooperează.
+- 🤝 *Utilă când:* adversarul este predispus să coopereze și se joacă pe termen lung.
+
+### 2. **Selfish (Egoist)**
+- 🧠 *Comportament:* întotdeauna se joacă pentru propriul interes, preferând să vâneze iepurele (hare) chiar dacă celălalt joacă cooperant.
+- 💥 *Scop:* să câștige individual fără a depinde de ceilalți jucători, indiferent de rezultatele jocului.
+- ⚠️ *Utilă când:* jucătorul vrea să maximizeze câștigul personal și nu are încredere în partenerul de joc.
+
+### 3. **Random (Aleator)**
+- 🧠 *Comportament:* alege aleatoriu între a coopera sau a acționa în interes propriu (vânarea iepurelui).
+- 🎲 *Scop:* introduce imprevizibilitate și confuzie în joc, fără o strategie fixă.
+- ❓ *Utilă când:* vrei să creezi un comportament imprevizibil, evitând să fii citit de ceilalți jucători.
+
+### 4. **Tit for Tat (Retaliere după comportament)**
+- 🧠 *Comportament:* începe cu cooperarea, iar apoi copiază ce face adversarul (cooperează dacă adversarul cooperează, acționează egoist dacă adversarul este egoist).
+- ⚖️ *Scop:* încurajează cooperarea reciprocă, dar pedepsește egoismul pentru a încuraja reciprocitatea.
+- 🔄 *Utilă când:* adversarul este predispus să coopereze și vrei să răspunzi în funcție de comportamentele acestuia.
+
+### 5. **Tit for Tat with Forgiveness (Retaliere cu iertare)**
+- 🧠 *Comportament:* începe cu cooperarea și copiază comportamentul adversarului, dar permite o iertare în cazul unei trădări o dată, revenind la cooperare.
+- 💖 *Scop:* încurajează cooperarea, dar permite o a doua șansă în caz de trădare, pentru a restabili relațiile de cooperare.
+- ✨ *Utilă când:* adversarul poate greși sau poate trăda accidental și vrei să păstrezi oportunitatea de a coopera în continuare.
+
+</details>
+
 📂 **Rezultatele complete ale simulărilor pot fi consultate aici:**  
 <details>
 <summary>📄 Simulari Dilema Prizonierului</summary>
