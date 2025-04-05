@@ -75,3 +75,58 @@ Rezultat: P1 - 30, P2 - 38 → P2 câștigă. <br>
 ## 📌 Resurse  
 - [Graf cod Dilema Prizonierului](https://app.code2flow.com/vj1Gfgn6v1yG)
 - [Graf cod Stag Hunt](https://app.code2flow.com/uPm1xk)  
+
+# 🎯 Strategii pentru jocul "Licitația Primului Preț"
+
+## Descriere generală
+
+**"Licitația Primului Preț"** este un joc de simulare în care mai mulți jucători oferă o sumă (bid) pentru a câștiga un obiect evaluat la o anumită valoare. Jucătorul care oferă cea mai mare sumă câștigă obiectul și obține profitul calculat astfel:
+
+> `Profit = Valoarea obiectului - Suma oferită (bid)`
+
+Obiectivul este să câștigi cât mai multe licitații **cu profit cât mai mare** și **cu eficiență în oferte**.
+
+<details>
+<summary><strong>♟️ Strategii disponibile</strong> (click pentru detalii)</summary>
+
+### 1. **agresiv**
+- 🧠 *Comportament:* oferă între 80% și 100% din valoarea obiectului.
+- 🎯 *Scop:* maximizează șansele de câștig, dar riscă profit mic sau chiar negativ.
+- 🔥 *Utilă când:* sunt puțini jucători sau valoarea obiectului e mare.
+
+### 2. **moderat**
+- 🧠 *Comportament:* oferă între 50% și 80% din valoare.
+- ⚖️ *Scop:* balans între câștig și profit.
+- ✨ *Utilă când:* piața e stabilă, cu jucători variabili.
+
+### 3. **conservator**
+- 🧠 *Comportament:* oferă între 20% și 50%.
+- 💼 *Scop:* maximizarea profitului, cu șanse mici de câștig.
+- 🛡️ *Utilă când:* sunt mulți jucători agresivi și piața e riscantă.
+
+### 4. **aleator**
+- 🧠 *Comportament:* oferă între 20% și 100%, aleatoriu.
+- 🎲 *Scop:* impredictibil, poate surprinde adversarii.
+- ❓ *Utilă când:* se dorește simularea unei piețe incerte.
+
+### 5. **riscant**
+- 🧠 *Comportament:* oferă între 95% și 100%.
+- 💣 *Scop:* să câștige aproape orice licitație, dar cu risc ridicat de pierdere.
+- 🚨 *Utilă când:* fiecare obiect are valoare mare, iar pierderea nu contează.
+
+### 6. **precaut**
+- 🧠 *Comportament:* oferă între 10% și 40%.
+- 🐢 *Scop:* extrem de precaut, bazat pe protejarea capitalului.
+- 🧩 *Utilă când:* obiectele sunt de valoare incertă sau se joacă pe termen lung.
+
+### 7. **competitiv**
+- 🧠 *Comportament:* analizează celelalte oferte și oferă ușor sub maximul cunoscut.
+- 🧬 *Scop:* câștigă oferind puțin sub cel mai ridicat bid anterior.
+- 🥇 *Utilă când:* jucătorul poate învăța din comportamentul pieței.
+
+### 8. **adaptiv**
+- 🧠 *Comportament:* învață din propria experiență și ajustează oferta în funcție de rezultatele anterioare.
+- 📈 *Scop:* se adaptează la piață: oferă mai mult dacă a pierdut, mai puțin dacă a câștigat.
+- 🧠 *Utilă când:* se joacă pe termen lung și condițiile se schimbă.
+
+</details>

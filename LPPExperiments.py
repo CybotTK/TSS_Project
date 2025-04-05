@@ -1,4 +1,6 @@
 import random
+import tkinter as tk
+from tkinter import ttk, messagebox
 import matplotlib.pyplot as plt
 
 class Player:
@@ -113,9 +115,148 @@ experiments = [
     {"num_players": 20, "num_rounds": 10, "value_range": (10, 1000), "strategy_distribution": {"riscant": 5, "precaut": 5, "aleator": 5, "moderat": 5}},  # Piețe extreme
 ]
 
-num_simulations = 500
+def menu():
+    print("\n=== Meniu ===")
+    print("1. Rulează experimentele predefinite")
+    print("2. Introdu un experiment personalizat")
+    print("0. Ieșire")
 
-for i, exp in enumerate(experiments):
-    print(f"\nExperiment {i+1}: {exp}")
-    results = run_simulation(**exp, num_simulations=num_simulations)
-    plot_results(results, num_simulations, title=f"Experiment {i+1}")
+def get_custom_experiment():
+    try:
+        num_players = int(input("Număr de jucători: "))
+        num_rounds = int(input("Număr de runde: "))
+        min_val = float(input("Valoare minimă: "))
+        max_val = float(input("Valoare maximă: "))
+
+        print("Introdu strategiile și frecvența lor (ex: agresiv 2): scrie 'gata' când ai terminat.")
+        strategy_distribution = {}
+        while True:
+            entry = input("Strategie și frecvență: ")
+            if entry.lower() == "gata":
+                break
+            parts = entry.strip().split()
+            if len(parts) == 2:
+                strategy, count = parts
+                strategy_distribution[strategy] = int(count)
+
+        return {
+            "num_players": num_players,
+            "num_rounds": num_rounds,
+            "value_range": (min_val, max_val),
+            "strategy_distribution": strategy_distribution
+        }
+    except Exception as e:
+        print(f"Eroare la introducerea datelor: {e}")
+        return None
+
+def main():
+    num_simulations = 500
+    while True:
+        menu()
+        choice = input("Alege opțiunea: ")
+
+        if choice == "1":
+            for i, exp in enumerate(experiments):
+                print(f"\nExperiment {i+1}: {exp}")
+                results = run_simulation(**exp, num_simulations=num_simulations)
+                plot_results(results, num_simulations, title=f"Experiment {i+1}")
+        elif choice == "2":
+            exp = get_custom_experiment()
+            if exp:
+                print("\nExperiment personalizat:")
+                print(exp)
+                results = run_simulation(**exp, num_simulations=num_simulations)
+                plot_results(results, num_simulations, title="Experiment Personalizat")
+        elif choice == "0":
+            print("Ieșire din program.")
+            break
+        else:
+            print("Opțiune invalidă. Încearcă din nou.")
+
+def start_predefined():
+    for i, exp in enumerate(experiments):
+        results = run_simulation(**exp, num_simulations=500)
+        plot_results(results, 500, title=f"Experiment {i+1}")
+
+def run_custom():
+    try:
+        num_players = int(entry_players.get())
+        num_rounds = int(entry_rounds.get())
+        min_val = float(entry_min.get())
+        max_val = float(entry_max.get())
+
+        strategy_distribution = {}
+        entries = strategy_text.get("1.0", tk.END).strip().splitlines()
+        for line in entries:
+            parts = line.split()
+            if len(parts) == 2:
+                strategy, count = parts
+                strategy_distribution[strategy] = int(count)
+
+        exp = {
+            "num_players": num_players,
+            "num_rounds": num_rounds,
+            "value_range": (min_val, max_val),
+            "strategy_distribution": strategy_distribution
+        }
+
+        results = run_simulation(**exp, num_simulations=500)
+        plot_results(results, 500, title="Experiment Personalizat")
+    except Exception as e:
+        messagebox.showerror("Eroare", str(e))
+
+# === GUI ===
+
+root = tk.Tk()
+root.title("Simulare Strategii Licitație")
+root.geometry("600x600")
+
+# Buton pentru experimente predefinite
+btn_predefined = ttk.Button(root, text="Rulează experimente predefinite", command=start_predefined)
+btn_predefined.pack(pady=10)
+
+# Secțiune experiment personalizat
+ttk.Label(root, text="--- Experiment Personalizat ---").pack(pady=10)
+
+frame = ttk.Frame(root)
+frame.pack()
+
+ttk.Label(frame, text="Jucători:").grid(row=0, column=0, sticky="e")
+entry_players = ttk.Entry(frame)
+entry_players.grid(row=0, column=1)
+
+ttk.Label(frame, text="Runde:").grid(row=1, column=0, sticky="e")
+entry_rounds = ttk.Entry(frame)
+entry_rounds.grid(row=1, column=1)
+
+ttk.Label(frame, text="Valoare minimă:").grid(row=2, column=0, sticky="e")
+entry_min = ttk.Entry(frame)
+entry_min.grid(row=2, column=1)
+
+ttk.Label(frame, text="Valoare maximă:").grid(row=3, column=0, sticky="e")
+entry_max = ttk.Entry(frame)
+entry_max.grid(row=3, column=1)
+
+ttk.Label(root, text="Strategii și frecvențe (ex: agresiv 2):").pack()
+# Lista strategiilor valide
+strategie_info = (
+    "Strategii disponibile:\n"
+    "- agresiv\n"
+    "- moderat\n"
+    "- conservator\n"
+    "- aleator\n"
+    "- riscant\n"
+    "- precaut\n"
+    "- competitiv\n"
+    "- adaptiv"
+)
+
+ttk.Label(root, text=strategie_info, foreground="darkblue", justify="left").pack(pady=10)
+
+strategy_text = tk.Text(root, height=6)
+strategy_text.pack()
+
+btn_custom = ttk.Button(root, text="Rulează experiment personalizat", command=run_custom)
+btn_custom.pack(pady=20)
+
+root.mainloop()
