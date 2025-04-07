@@ -125,12 +125,6 @@ experiments = [
     {"num_players": 10, "num_rounds": 10, "value_range": (10, 1000), "strategy_distribution": {"competitiv": 5, "adaptiv": 5}},  # Piețe extreme
 ]
 
-def menu():
-    print("\n=== Meniu ===")
-    print("1. Rulează experimentele predefinite")
-    print("2. Introdu un experiment personalizat")
-    print("0. Ieșire")
-
 def get_custom_experiment():
     try:
         num_players = int(input("Număr de jucători: "))
@@ -159,34 +153,10 @@ def get_custom_experiment():
         print(f"Eroare la introducerea datelor: {e}")
         return None
 
-def main():
-    num_simulations = 500
-    while True:
-        menu()
-        choice = input("Alege opțiunea: ")
-
-        if choice == "1":
-            for i, exp in enumerate(experiments):
-                print(f"\nExperiment {i+1}: {exp}")
-                results = run_simulation(**exp, num_simulations=num_simulations)
-                plot_results(results, num_simulations, title=f"Experiment {i+1}")
-        elif choice == "2":
-            exp = get_custom_experiment()
-            if exp:
-                print("\nExperiment personalizat:")
-                print(exp)
-                results = run_simulation(**exp, num_simulations=num_simulations)
-                plot_results(results, num_simulations, title="Experiment Personalizat")
-        elif choice == "0":
-            print("Ieșire din program.")
-            break
-        else:
-            print("Opțiune invalidă. Încearcă din nou.")
-
 def start_predefined():
     for i, exp in enumerate(experiments):
         results = run_simulation(**exp, num_simulations=500)
-        plot_results(results, 500, title=f"Experiment {i+1}")
+        plot_results(results, 500, i+1, title=f"Experiment {i+1}")
 
 def run_custom():
     try:
