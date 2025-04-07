@@ -194,7 +194,7 @@ Obiectivul este să câștigi cât mai multe licitații **cu profit cât mai mar
   
 ### 1. [Link wiki](https://ro.wikipedia.org/wiki/Dilema_prizonierului)
 
-### 2. [Link scientia][https://ro.wikipedia.org/wiki/Dilema_prizonierului](https://www.scientia.ro/homo-humanus/51-psihologie/385-dilema-prezonierului-teoria-jocului.html)
+### 2. [Link scientia](https://www.scientia.ro/homo-humanus/51-psihologie/385-dilema-prezonierului-teoria-jocului.html)
 
 </details>
 
