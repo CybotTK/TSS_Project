@@ -1,7 +1,11 @@
+import os
 import random
 import tkinter as tk
 from tkinter import ttk, messagebox
 import matplotlib.pyplot as plt
+
+output_folder = "imagini"
+os.makedirs(output_folder, exist_ok=True)
 
 class Player:
     def __init__(self, id, strategy):
@@ -70,7 +74,7 @@ def run_simulation(num_players, num_rounds, value_range, strategy_distribution, 
 
     return strategy_stats
 
-def plot_results(strategy_stats, num_simulations, title):
+def plot_results(strategy_stats, num_simulations, experiment_index, title):
     strategies = list(strategy_stats.keys())
     
     wins = [strategy_stats[s]["wins"] / num_simulations for s in strategies]
@@ -96,7 +100,12 @@ def plot_results(strategy_stats, num_simulations, title):
 
     plt.suptitle(title)
     plt.tight_layout()
-    plt.show()
+    
+    # Salvăm figura în folderul „imagini”
+    filename = os.path.join(output_folder, f"experiment_{experiment_index}.png")
+    plt.savefig(filename)
+    plt.close()
+    print(f"Salvat: {filename}")
 
 # **Experimente pentru testarea strategiilor** 
 
@@ -113,6 +122,7 @@ experiments = [
     {"num_players": 5, "num_rounds": 15, "value_range": (5, 50), "strategy_distribution": {"riscant": 1, "precaut": 2, "competitiv": 2}},  # Resurse limitate
     {"num_players": 10, "num_rounds": 30, "value_range": (50, 500), "strategy_distribution": {"competitiv": 5, "adaptiv": 5}},  # Doar strategiile cele mai flexibile
     {"num_players": 20, "num_rounds": 10, "value_range": (10, 1000), "strategy_distribution": {"riscant": 5, "precaut": 5, "aleator": 5, "moderat": 5}},  # Piețe extreme
+    {"num_players": 10, "num_rounds": 10, "value_range": (10, 1000), "strategy_distribution": {"competitiv": 5, "adaptiv": 5}},  # Piețe extreme
 ]
 
 def menu():
