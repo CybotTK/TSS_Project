@@ -209,3 +209,14 @@ Obiectivul este să câștigi cât mai multe licitații **cu profit cât mai mar
 
 </details>
 
+<details>
+<summary><strong>Link-uri folosite pentru Licitarea Primului Pret</strong> (click pentru detalii)</summary>
+  
+### 1. [Link Youtube Video](https://www.youtube.com/watch?v=Eo7uY76gcvo)
+
+### 2. [Link Mathematics](https://math.stackexchange.com/questions/1173548/nash-equilibrium-in-first-price-auction)
+
+### 3. [Link GameTheory](https://www.gametheory.net/dictionary/Auctions/FirstPriceAuction.html?utm_source=chatgpt.com)
+
+</details>
+
