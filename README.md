@@ -188,9 +188,9 @@ Obiectivul este să câștigi cât mai multe licitații **cu profit cât mai mar
 
 </details>
 
-# **Link-uri**
+# **🌐 Link-uri**
 <details>
-<summary><strong>🌐 Link-uri folosite pentru testarea Dilemei Prizonierului</strong> (click pentru detalii)</summary>
+<summary><strong>Link-uri folosite pentru testarea Dilemei Prizonierului</strong> (click pentru detalii)</summary>
   
 ### 1. [Link wiki](https://ro.wikipedia.org/wiki/Dilema_prizonierului)
 
