@@ -198,3 +198,14 @@ Obiectivul este să câștigi cât mai multe licitații **cu profit cât mai mar
 
 </details>
 
+<details>
+<summary><strong>Link-uri folosite pentru testarea Stag Hunt</strong> (click pentru detalii)</summary>
+  
+### 1. [Link GameTheory](https://www.gametheory.net/dictionary/Games/StagHunt.html)
+
+### 2. [Link Imotions](https://imotions.com/blog/learning/research-fundamentals/the-stag-hunt-game-theory/)
+
+### 3. [Link Inomics](https://inomics.com/terms/stag-hunt-1537413)
+
+</details>
+
