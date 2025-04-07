@@ -191,8 +191,10 @@ Obiectivul este să câștigi cât mai multe licitații **cu profit cât mai mar
 # **Link-uri**
 <details>
 <summary><strong>♟️ Link-uri folosite pentru testarea Dilemei Prizonierului</strong> (click pentru detalii)</summary>
-<br>
-### 1. [Link wiki]https://ro.wikipedia.org/wiki/Dilema_prizonierului
+  
+### 1. [Link wiki](https://ro.wikipedia.org/wiki/Dilema_prizonierului)
+
 ### 2. [Link scientia][https://ro.wikipedia.org/wiki/Dilema_prizonierului](https://www.scientia.ro/homo-humanus/51-psihologie/385-dilema-prezonierului-teoria-jocului.html)
+
 </details>
 
