@@ -188,6 +188,9 @@ Obiectivul este să câștigi cât mai multe licitații **cu profit cât mai mar
 
 </details>
 
+## 📌 Resurse  
+- [Graf cod Licitarea Primului Pret](https://app.code2flow.com/9Jaxtj)
+
 # **🌐 Link-uri**
 <details>
 <summary><strong>Link-uri folosite pentru testarea Dilemei Prizonierului</strong> (click pentru detalii)</summary>
