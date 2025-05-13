@@ -185,6 +185,14 @@ def run_custom():
     except Exception as e:
         messagebox.showerror("Eroare", str(e))
 
+
+#NU TREBUIE SA RAMANA NORMAL IN LUCRAREA FINALA
+
+import subprocess
+subprocess.run(['python', 'testare_licitatie_core.py'])
+
+################
+
 # === GUI ===
 
 root = tk.Tk()
