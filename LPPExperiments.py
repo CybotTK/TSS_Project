@@ -181,7 +181,7 @@ def run_custom():
         }
 
         results = run_simulation(**exp, num_simulations=500)
-        plot_results(results, 500, title="Experiment Personalizat")
+        plot_results(results, 500, 1, title="Experiment Personalizat")
     except Exception as e:
         messagebox.showerror("Eroare", str(e))
 
@@ -240,3 +240,5 @@ btn_custom = ttk.Button(root, text="Rulează experiment personalizat", command=r
 btn_custom.pack(pady=20)
 
 root.mainloop()
+
+## UNIT TESTS
